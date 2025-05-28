@@ -1,26 +1,24 @@
-package Seven;
-
 public class CircleArea {
     double radius;
 
     // Constructor to initialize radius
-    CircleArea(double r) {
-        radius = r;
+    CircleArea(double radius) {
+        this.radius = radius;
     }
 
     // Method to calculate area
     double getArea() {
-        return 3.14 * radius * radius;
+        return Math.PI * radius * radius;
     }
 
     // Method to calculate perimeter (circumference)
     double getPerimeter() {
-        return 2 * 3.14 * radius;
+        return 2 * Math.PI * radius;
     }
 
     public static void main(String[] args) {
         CircleArea c = new CircleArea(5); // example radius
-        System.out.println("Area of Circle: " + c.getArea());
-        System.out.println("Perimeter of Circle: " + c.getPerimeter());
+        System.out.printf("Area of Circle: %.2f%n", c.getArea());
+        System.out.printf("Perimeter of Circle: %.2f%n", c.getPerimeter());
     }
 }
