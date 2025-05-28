@@ -1,12 +1,10 @@
-package Seven;
-
 public class RectanglePerimeter {
     int length, breadth;
 
     // Constructor to initialize length and breadth
-    RectanglePerimeter(int l, int b) {
-        length = l;
-        breadth = b;
+    RectanglePerimeter(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
     }
 
     // Method to calculate area
